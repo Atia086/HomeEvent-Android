@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Event.WhereFragment"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/encode_name_place_edit_text_where_fragment_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/encode_name_place_edit_text_where_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/encode_place_name"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/encode_adress_place_edit_text_where_fragment_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encode_name_place_edit_text_where_fragment_text_input_layout">
+
+        <EditText
+            android:id="@+id/encode_adress_place_edit_text_where_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/encode_place_adress"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:lines="3"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/places_radio_group_where_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encode_adress_place_edit_text_where_fragment_text_input_layout"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/house_radio_button_where_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/house"/>
+
+        <RadioButton
+            android:id="@+id/restaurant_radio_button_where_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurant" />
+
+        <RadioButton
+            android:id="@+id/friends_place_radio_button_where_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends_place" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_button_where_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        android:enabled="false"/>
+
+</RelativeLayout>

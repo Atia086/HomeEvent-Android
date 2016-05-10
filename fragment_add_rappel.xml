@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.rappel.AddRappelFragment"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/recall_description_edit_text_add_rappel_fragment_text_input_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/recall_description_edit_text_add_rappel_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_navigation_title"
+            android:lines="5"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/cancel_button_add_rappel_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cancel"/>
+
+    <Button
+        android:id="@+id/add_button_add_rappel_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/fix_date"
+        android:enabled="false"/>
+
+</RelativeLayout>

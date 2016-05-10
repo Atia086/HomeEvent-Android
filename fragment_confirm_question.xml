@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yolo.michael.yolo.fragment.question.ConfirmQuestionFragment"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/question_place_holder_text_view_confirm_question_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_placeholder"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/question_content_text_view_confirm_question_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_place_holder_text_view_confirm_question_fragment"
+        android:layout_marginBottom="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selected_contacts_recycler_view_confirm_question_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/question_content_text_view_confirm_question_fragment"
+        android:layout_above="@+id/confirmation_button_confirm_question_fragment"/>
+
+    <Button
+        android:id="@+id/cancel_button_confirm_question_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cancel"/>
+
+    <Button
+        android:id="@+id/confirmation_button_confirm_question_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/confirmation"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yolo.michael.yolo.fragment.question.AskQuestionFragment"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ask_question_edit_text_ask_question_fragment_text_input_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ask_question_edit_text_ask_question_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:hint="@string/ask_question_here"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contacts_recycler_view_ask_question_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ask_question_edit_text_ask_question_fragment_text_input_layout_container"
+        android:layout_above="@+id/next_button_ask_question_fragment"/>
+
+    <Button
+        android:id="@+id/next_button_ask_question_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        android:enabled="false"/>
+
+</RelativeLayout>

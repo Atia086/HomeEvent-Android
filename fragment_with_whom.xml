@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Event.WithWhomFragment"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/group_text_view_whit_whom_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Fontionnalité supprimé, peutn être à réinplentée plus tard
+    <LinearLayout
+        android:id="@+id/check_boxes_group_linear_layout_with_whom_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/group_text_view_whit_whom_fragment">
+
+        <CheckBox
+            android:id="@+id/check_box_friends_with_whom_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends"/>
+
+        <CheckBox
+            android:id="@+id/check_box_family_with_whom_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/family"/>
+
+        <CheckBox
+            android:id="@+id/check_box_colleagues_with_whom_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colleagues"/>
+
+    </LinearLayout> -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contacts_recycler_view_with_whom_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/group_text_view_whit_whom_fragment"
+        android:layout_above="@+id/next_button_with_whom_fragment" />
+
+    <Button
+        android:id="@+id/next_button_with_whom_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"/>
+
+</RelativeLayout>

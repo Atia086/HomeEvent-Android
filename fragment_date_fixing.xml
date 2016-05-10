@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Event.DateFixingFragment"
+    android:id="@+id/relative_layout_container_date_fixing_fragment"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/when_organize_text_view_when_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/when_organize_text_view"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/fixed_date_text_view_when_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/when_organize_text_view_when_fragment"
+        android:text="@string/is_date_fixed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <Switch
+        android:id="@+id/fixed_date_switch_when_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fixed_date_text_view_when_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"/>
+
+    <TextView
+        android:id="@+id/add_date_text_view_1_when_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_date"
+        android:layout_below="@id/fixed_date_switch_when_fragment"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/add_date_button_1_when_fragment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/fixed_date_switch_when_fragment"
+        android:layout_toRightOf="@id/add_date_text_view_1_when_fragment"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/add_date_text_view_2_when_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_date_button_1_when_fragment"
+        android:text="@string/add_date"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/add_date_button_2_when_fragment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_below="@id/add_date_button_1_when_fragment"
+        android:layout_toRightOf="@id/add_date_text_view_2_when_fragment"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/add_date_text_view_3_when_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_date_button_2_when_fragment"
+        android:text="@string/add_date"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/add_date_button_3_when_fragment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_below="@id/add_date_button_2_when_fragment"
+        android:layout_toRightOf="@id/add_date_text_view_3_when_fragment"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:id="@+id/next_button_when_fragment"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:enabled="false"/>
+
+</RelativeLayout>
